@@ -15,6 +15,8 @@ prompt = "<OD>" # Object Detection
 # prompt = "<REGION_PROPOSAL>"
 # prompt = "<OCR>"
 # prompt = "<OCR_WITH_REGION>"
+#task_prompt = '<OPEN_VOCABULARY_DETECTION>' # You write a input and it will try to find it in the image
+#results = run_example(task_prompt, text_input="a green car")
 
 url = "https://huggingface.co/datasets/huggingface/documentation-images/resolve/main/transformers/tasks/car.jpg?download=true"
 image = Image.open(requests.get(url, stream=True).raw)
