@@ -7,7 +7,14 @@ from transformers import AutoProcessor, AutoModelForCausalLM
 model = AutoModelForCausalLM.from_pretrained("microsoft/Florence-2-large", trust_remote_code=True)
 processor = AutoProcessor.from_pretrained("microsoft/Florence-2-large", trust_remote_code=True)
 
-prompt = "<OD>"
+prompt = "<OD>" # Object Detection
+# prompt = "<CAPTION>"
+# prompt = "<DETAILED_CAPTION>"
+# prompt = "<MORE_DETAILED_CAPTION>"
+# prompt = "<DENSE_REGION_CAPTION>"
+# prompt = "<REGION_PROPOSAL>"
+# prompt = "<OCR>"
+# prompt = "<OCR_WITH_REGION>"
 
 url = "https://huggingface.co/datasets/huggingface/documentation-images/resolve/main/transformers/tasks/car.jpg?download=true"
 image = Image.open(requests.get(url, stream=True).raw)
