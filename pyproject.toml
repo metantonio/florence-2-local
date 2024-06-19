@@ -2,12 +2,16 @@
 name = "florence"
 version = "0.1.0"
 description = "Little backend using Florence-2"
-authors = ["antonio_martinez88@hotmail.com"]
+authors = ["Antonio Martinez <antonio_martinez88@hotmail.com>"]
 license = "MIT"
 readme = "README.md"
 
 [tool.poetry.dependencies]
 python = "^3.10"
+requests = "^2.32.3"
+pillow = "^10.3.0"
+transformers = "^4.41.2"
+torch = "^2.3.1"
 
 
 [build-system]
